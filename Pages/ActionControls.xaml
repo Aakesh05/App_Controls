@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Controls.Pages.ActionControls"
+             Title="Action Controls"
+             BackgroundColor="AliceBlue">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Frame BackgroundColor="MediumPurple" Margin="10">
+                <Button x:Name="randomButton" BackgroundColor="IndianRed" Text="Listen Listen Listen" Clicked="randomButton_Clicked_1"/>
+            </Frame>
+
+            <Frame BackgroundColor="MediumPurple" Margin="10">
+                <Button x:Name="homePageButton" BackgroundColor="IndianRed" Text="Go Back" Clicked="homePageButton_Clicked"/>
+            </Frame>
+
+            <Frame BackgroundColor="BlanchedAlmond" Margin="10">
+                <SearchBar x:Name="searchBar" TextColor="Black" SearchButtonPressed="searchBar_SearchButtonPressed"/>
+            </Frame>
+
+            <SwipeView>
+                <SwipeView.LeftItems>
+                    <SwipeItems>
+                        <SwipeItem x:Name="teamsSwipeImage"
+                                   BackgroundColor="White"
+                                   IconImageSource="teams.jpg"
+                                   Invoked="teamsSwipeImage_Invoked"/>
+                        <SwipeItem x:Name="linkedinSwipeImage"
+                                   BackgroundColor="White"
+                                   IconImageSource="linkenin.jpg"
+                                   Invoked="linkedinSwipeImage_Invoked"/>
+                    </SwipeItems>
+                </SwipeView.LeftItems>
+                <VerticalStackLayout>
+                    <Label Text="Swipe to see links to ARI!!" 
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           Margin="10"
+                           TextColor="Black"/>
+                </VerticalStackLayout>
+            </SwipeView>
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Controls.Pages.MainPage"
+             Title="MainPage"
+             BackgroundColor="Grey">
+    <FlexLayout Direction="Column">
+        <VerticalStackLayout FlexLayout.Grow="1" Padding="20" Spacing="18" VerticalOptions="End">
+            <Button x:Name="commonControlsButton" BackgroundColor="Purple" Text="Ari's Showcase" TextColor="White" Clicked="commonControlsButton_Clicked"/>
+            <Button x:Name="commonActionsButton" BackgroundColor="IndianRed" Text="Ari's forum page" TextColor="White" Clicked="commonActionsButton_Clicked"/>
+            <Button x:Name="commonInputsButton" BackgroundColor="ForestGreen" Text="Ari's Survey" TextColor="White" Clicked="commonInputsButton_Clicked"/>
+        </VerticalStackLayout>
+        <VerticalStackLayout BackgroundColor="AliceBlue" Padding="10">
+            <Label Text="Arijinder Binder"
+                   TextColor="AliceBlue"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+        </VerticalStackLayout>
+    </FlexLayout>
+    
+</ContentPage>

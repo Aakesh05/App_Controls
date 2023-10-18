@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Controls.Pages.CommonControls"
+             Title="Common Controls"
+             BackgroundColor="DarkBlue">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Frame BackgroundColor="AliceBlue" Margin="12">
+                <VerticalStackLayout>
+                    <Image Source="ari.jpg" HeightRequest="150"/>
+                    <Label Text="Mr. Okay Guys" 
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           Margin="10"
+                           TextColor="Black"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="AliceBlue" Margin="12">
+                <VerticalStackLayout>
+                <Image Source="ariii.jpg" HeightRequest="100"/>
+                <Border Padding="10" StrokeThickness="5" Stroke="Green" BackgroundColor="AliceBlue">
+                        <Button x:Name="mainPageButton"
+                           Text="Check your sharepoint"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           Margin="10"
+                           TextColor="Black"
+                           Clicked="mainPageButton_Clicked"/>
+                    </Border>
+                </VerticalStackLayout>
+            </Frame>
+
+             <WebView Source="gRaz4dwAAAYs6SgdgUOGUIPxwhv5hPTOPyceWwOLRFD6XI3dc9IC2F9ZX5T5CzsWTl71Pm_ISs1H4bp1UBhD8C0R5M3_4dvg9psEJa20DVCANAvLUviwQr9tljZrgi7k"/>
+        </VerticalStackLayout>
+    </ScrollView>
+    
+</ContentPage>
